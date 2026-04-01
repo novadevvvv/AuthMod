@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "authmod",
+  "version": "${version}",
+  "name": "Auth Mod",
+  "description": "Command code runner with a simple menu and hotkeys.",
+  "authors": [
+    "GitHub Copilot"
+  ],
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "authmod.AuthModClient"
+    ],
+    "modmenu": [
+      "authmod.AuthModModMenu"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.10",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*",
+    "modmenu": ">=11.0.0",
+    "cloth-config": ">=15.0.0"
+  }
+}
